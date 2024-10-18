@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "funky_fabric",
+	"version": "${version}",
+	"name": "Funky Fabric",
+	"description": "Funky Fabric is a free, open source mod, which just adds a few silly features into the wonderful world of Minecraft!",
+	"authors": [
+		"NRobot10Modding"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/funky_fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nrobot10.funkyfabric.FunkyFabric"
+		],
+		"fabric-datagen": [
+			"net.nrobot10.funkyfabric.FunkyFabricDataGenerator"
+		],
+		"client": [
+			"net.nrobot10.funkyfabric.FunkyFabricClient"
+		]
+	},
+	"mixins": [
+		"funky_fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
