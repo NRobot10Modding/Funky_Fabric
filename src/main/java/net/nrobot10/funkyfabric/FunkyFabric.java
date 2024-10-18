@@ -2,6 +2,7 @@ package net.nrobot10.funkyfabric;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nrobot10.funkyfabric.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,5 +13,6 @@ public class FunkyFabric implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
