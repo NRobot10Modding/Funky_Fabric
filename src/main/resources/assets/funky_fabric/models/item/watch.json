@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:/generted",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "funkyfabric:item/watch"
+    "layer0": "funky_fabric:item/watch"
   }
 }
