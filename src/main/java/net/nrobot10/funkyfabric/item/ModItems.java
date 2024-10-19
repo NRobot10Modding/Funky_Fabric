@@ -17,6 +17,8 @@ public class ModItems {
 
     public static final Item SPRING = registerItem("spring", new Item(new Item.Settings()));
 
+    public static final Item NO = registerItem("no", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FunkyFabric.MOD_ID, name), item);
     }
@@ -31,6 +33,10 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
             entries.add(BLUESTONE);
             entries.add(SPRING);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(NO);
         });
     }
 }
