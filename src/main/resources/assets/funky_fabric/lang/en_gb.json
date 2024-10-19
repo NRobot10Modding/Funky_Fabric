@@ -2,5 +2,7 @@
   "item.funky_fabric.watch": "Watch",
   "item.funky_fabric.bluestone": "Bluestone Dust",
   "item.funky_fabric.spring": "Spring",
-  "item.funky_fabric.no": "NO"
+  "item.funky_fabric.no": "NO",
+  "item.funky_fabric.cap": "Cap",
+  "item.funky_fabric.hoodie": "Hoodie"
 }

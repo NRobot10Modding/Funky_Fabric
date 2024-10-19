@@ -19,6 +19,10 @@ public class ModItems {
 
     public static final Item NO = registerItem("no", new Item(new Item.Settings()));
 
+    public static final Item CAP = registerItem("cap", new Item(new Item.Settings()));
+
+    public static final Item HOODIE = registerItem("hoodie", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(FunkyFabric.MOD_ID, name), item);
     }
@@ -28,6 +32,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
             entries.add(WATCH);
+            entries.add(CAP);
+            entries.add(HOODIE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(entries -> {
